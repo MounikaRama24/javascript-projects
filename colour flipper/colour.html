@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColourFlipper</title>
+  <link rel="stylesheet" href="collurFlipper.css">
+  <script src="colourFlipper.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Background Colour:<span class="color"></span></h1>
+    <button  id="btn">Click ME</button>
+
+
+
+</div>  
+<script type="text/javascript"> 
+    const colourArray=['red','pink','blue','purple',"orange",'Green','black'];
+const btn=document.getElementById('btn');
+const color =document.querySelector('.color');
+btn.addEventListener("click",function(){
+     const randomNumber=getRandomNumber();
+    document.body.style.backgroundColor=colourArray[randomNumber];
+    color.innerHTML=colourArray[randomNumber];
+
+});
+function getRandomNumber(){
+    return Math.floor(Math.random()*colourArray.length);
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+      body {
+        background-image: url('Toy.jpg');
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      </style>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+  <div class="alert" style="color: #bc1a4d;">Email send successfully</div>
+    <div class="wrapper">
+        <form action="" id="RegisterForm">
+          <div class="alert" style="color: #bc1a4d;text-align: center;">Registration successful</div>
+          
+          <br></br>
+          <br></br>
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <input type="text" id="email"   placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <input type="password" id="password"     placeholder="Create password" required>
+              </div>
+              <div class="input-box">
+                <input type="passwordconfirm" id="passwordconfirm" placeholder="Confirm password" required>
+              </div>
+              <div class="policy">
+                <input type="checkbox">
+                <h3>I accept all terms & condition</h3>
+              </div>
+              <div class="input-box button">
+                <input type="Submit" value="Register Now">
+              </div>
+              <div class="text">
+                <h3 style="color: aliceblue;">Already have an account? <a href="login-form.html"> Login now</a></h3>
+              </div>
+            
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="Register.js"></script>
+    <audio autoplay>
+      <source src="Avengers BGM.mp3" type="audio/wav" />
+    </audio>
+</body>
+
+</html>

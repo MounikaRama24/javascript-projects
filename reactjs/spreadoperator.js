@@ -5,8 +5,7 @@ set1={
 }
 set2={...set1,
     age:23,
-    gender:
-    'Female' ,
+    gender: 'Female' ,
 
 }
 console.log(set2)
